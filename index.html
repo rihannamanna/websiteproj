@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Champions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Champions Sports Bar and Restaurant</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="data:image/png;base64,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" alt="champions" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Champions</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="https://media-cdn.tripadvisor.com/media/photo-s/13/cd/49/e7/champions-sports-bar.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Champions</h1><br>
+      <h5 class="w3-center">Sports Bar and Restaurant in the Marriott hotel</h5>
+      <p class="w3-large">Don't miss the big game during your stay in Amman, Jordan. Champions Tavern features a relaxed, pub-style atmosphere with sporting events on flat-screen TVs.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Big TV screens, good food, and a nice hangout spot!.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Menu</h1><br>
+      <h4>Chicken Quesadilla</h4>
+      <p class="w3-text-grey">Pepper-jack, cheese, salsa, guacamole, sour cream. 7.500</p><br>
+    
+      <h4>Baja-style shrimp lettuce wraps</h4>
+      <p class="w3-text-grey"> With avocado, lime, and tortilla planks. 12.000</p><br>
+    
+      <h4>The Champion burger</h4>
+      <p class="w3-text-grey">Prime Beef, Cheddar, Bacon, Pickles. 9.600</p><br>
+    
+      <h4>Nachos</h4>
+      <p class="w3-text-grey">Corn nachos, Cheddar cheese, Jalapeno, Guacamole, Sour cream. 7.900</p><br>
+    
+      <h4>Classic Caesar salad</h4>
+      <p class="w3-text-grey">Caesar Dressing, Romaine Lettuce, Ciabatta Croutons 5.900</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="https://pbs.twimg.com/media/DfP4jCPXkAAovfF.jpg:large" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact info and Location</h1><br>
+    <p>Our location:</p>
+    <p class="w3-text-blue-grey w3-large"><b>Marriott Amman Hotel, Essam Al Ajlouni St 71, Amman</b></p>
+    <p>You can also contact us by phone (06) 560 7607 or email amman@marriotthotels.com.</p>
+   
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
